@@ -10,4 +10,7 @@ add_executable(demo01
         src/share_demo.cpp
         src/m_element.cpp
         src/insert_demo.cpp
+        src/mysql_demo.cpp
         )
+
+target_link_libraries(${PROJECT_NAME}  libmysqlclient.so)
