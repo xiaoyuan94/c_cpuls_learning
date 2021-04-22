@@ -8,4 +8,6 @@ set(CMAKE_CXX_STANDARD 14)
 add_executable(demo01
         src/main.cpp
         src/share_demo.cpp
-        src/m_element.cpp include/m_element.h src/insert_demo.cpp include/insert_demo.h)
+        src/m_element.cpp
+        src/insert_demo.cpp
+        )
