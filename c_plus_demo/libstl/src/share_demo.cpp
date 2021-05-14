@@ -4,7 +4,7 @@
 
 #include <memory>
 #include <iostream>
-#include "share_demo.h"
+#include "../include/share_demo.h"
 
 void ShareDemo::InsertMap()
 {
