@@ -35,11 +35,28 @@ void JsonDemo::FileShow()
     std::string name;
     int age;
     int size = root.size();
+    std::cout << "test read json ==============\n";
     for (int i = 0; i < size; ++i) {
         name = root[i]["name"].asString();
         age = root[i]["age"].asInt();
         std::cout << name << " " << age << std::endl;
     }
+}
+
+void JsonDemo::WriteSimple()
+{
+    Json::Value root;
+    Json::FastWriter writer;
+    Json::Value person;
+
+    person["name"] = "tocy";
+    person["age"] = 1000;
+    root.append(person);
+
+    std::string json_file = writer.write(root);
+
+    std::cout << "demo write json ==============\n";
+    std::cout << json_file << std::endl;
 }
 
 

@@ -9,7 +9,10 @@
 class JsonDemo {
 public:
     void Show();
+
     void FileShow();
+
+    void WriteSimple();
 };
 
 #endif //DEMO01_JSON_DEMO_H
