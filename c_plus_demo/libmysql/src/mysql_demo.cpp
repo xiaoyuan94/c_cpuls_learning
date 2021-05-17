@@ -2,7 +2,7 @@
 // Created by ubuntu on 2021/4/22.
 //
 
-#include "../include/mysql_demo.h"
+#include "mysql_demo.h"
 #include <vector>
 
 MysqlDemo::MysqlDemo()

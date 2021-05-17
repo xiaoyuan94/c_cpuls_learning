@@ -39,7 +39,6 @@ void InsertMap::Show()
         std::cout << pTest->aa_ << std::endl;
     }
 
-    system("pause");
 
 }
 

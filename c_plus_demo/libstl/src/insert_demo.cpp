@@ -3,7 +3,7 @@
 //
 
 #include <iostream>
-#include "../include/insert_demo.h"
+#include "insert_demo.h"
 
 
 void InsertDemo::InsertMap()
