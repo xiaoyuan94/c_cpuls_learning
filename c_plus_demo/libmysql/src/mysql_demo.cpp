@@ -35,6 +35,7 @@ void MysqlDemo::Init()
 
 void MysqlDemo::Insert()
 {
+    std::cout << "Insert() " << std::endl;
     std::string sql = "insert into student value(2, 'as', 12, 'qweq')";
     //执行sql语句
     mysql_query(&mysql_, sql.c_str());
