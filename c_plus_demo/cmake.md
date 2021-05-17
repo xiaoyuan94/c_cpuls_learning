@@ -223,7 +223,7 @@ cmake_minimum_required(VERSION 3.9)
 project(step5)
 
 include_directories(${PROJECT_SOURCE_DIR}/include)
-link_directories(${PROJECT_SOURCE_DIR}/lib)
+link_directories(${PROJECT_SOURCE_DIR}/libjson)
 
 add_executable(step5 src/src5.cpp)
 
@@ -516,7 +516,7 @@ set(CMAKE_INSTALL_PREFIX ${PROJECT_SOURCE_DIR}/install)
 
 add_library(step8 SHARED src/src8.cpp)
 
-install(TARGETS step8 DESTINATION lib)
+install(TARGETS step8 DESTINATION libjson)
 install(FILES ${PROJECT_SOURCE_DIR}/include/src8.h DESTINATION include)
 ```
 

@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.9)
 project(demo01)
+add_subdirectory(libjson)
 add_subdirectory(libmysql)
 add_subdirectory(libstl)
 add_subdirectory(start)
