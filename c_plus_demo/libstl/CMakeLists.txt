@@ -7,4 +7,6 @@ FILE(GLOB SRC_CPP ${PROJECT_SOURCE_DIR}/src/*.cpp)
 include_directories(${PROJECT_SOURCE_DIR}/include)
 # 指定生成libmyprint 动态库（默认为静态库）
 # SHARED指定生成库类型为动态库 STATIC为静态库
-ADD_LIBRARY(libstl SHARED ${SRC_CPP})
+ADD_LIBRARY(libstl SHARED
+        ${SRC_CPP}
+        )
