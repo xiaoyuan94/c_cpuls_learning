@@ -6,6 +6,7 @@ include_directories(
         ../libstl/include
         ../libjson/include
         ../libtest/include
+        ../libfoundation/include
 )
 
 link_directories(
@@ -13,11 +14,12 @@ link_directories(
         ../libstl
         ../libjson
         ../libtest
+        ../libfoundation
 )
 
 add_executable(start
         src/main.cpp
         )
 
-target_link_libraries(${PROJECT_NAME} libmysql libstl libjson libtest)
+target_link_libraries(${PROJECT_NAME} libmysql libstl libjson libtest libfoundation)
 
