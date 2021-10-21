@@ -3,13 +3,18 @@
 //
 
 #include <iostream>
-#include <template_demo.h>
 #include "demo.h"
+
+extern "C" {
+#include "c_use_cplus_demo.h"  // 由add.h和add.c组成
+}
 
 void Demo::show()
 {
     std::cout << " Demo show start " << std::endl;
-    TemplateDemo<std::string, std::string> templateDemo("hello ", "world");
-    templateDemo.show();
+//    CplusUseCDemo demo;
+//    demo.show();
+    show1();
+
     std::cout << " Demo show end \n" << std::endl;
 }
