@@ -6,15 +6,13 @@
 #include "demo.h"
 
 extern "C" {
-#include "c_use_cplus_demo.h"  // 由add.h和add.c组成
+//#include "c_use_cplus_demo.h"  // 由add.h和add.c组成
+#include "function_pointer.h"
 }
 
 void Demo::show()
 {
     std::cout << " Demo show start " << std::endl;
-//    CplusUseCDemo demo;
-//    demo.show();
-    show1();
-
+    FuncShow();
     std::cout << " Demo show end \n" << std::endl;
 }
